@@ -6,9 +6,13 @@ const Home = () => {
 	function redLight(){
 		setShadowRedLight("none")
 	if (shadowRedLight === "none"){
-		setShadowRedLight("10px 5px 5px black")
+		setShadowRedLight("0px 0px 60px white")
+		setShadowYellowLight("none")
+		setShadowGreenLight("none")
 	} else {
 		setShadowRedLight("none")
+		
+		
 	}
 	};
 
@@ -16,7 +20,10 @@ const Home = () => {
 	function yellowLight(){
 		setShadowYellowLight("none")
 	if (shadowYellowLight === "none"){
-		setShadowYellowLight("10px 5px 5px black")
+		setShadowYellowLight("0px 0px 60px white")
+		setShadowRedLight("none")
+		setShadowGreenLight("none")
+		
 	} else {
 		setShadowYellowLight("none")
 	}
@@ -26,7 +33,9 @@ const Home = () => {
 	function greeLight(){
 		setShadowGreenLight("none")
 	if (shadowGreenLight === "none"){
-		setShadowGreenLight("10px 5px 5px black")
+		setShadowGreenLight("0px 0px 60px white")
+		setShadowRedLight("none")
+		setShadowYellowLight("none")
 	} else {
 		setShadowGreenLight("none")
 	}
@@ -35,9 +44,12 @@ const Home = () => {
 
 	return (
 		<>
-		<button onClick={redLight} style={{backgroundColor: "red", boxShadow: shadowRedLight }}>Rojo</button>
-		<button onClick={yellowLight} style={{backgroundColor: "yellow", boxShadow: shadowYellowLight }}>Amarillo</button>
-		<button onClick={greeLight} style={{backgroundColor: "green", boxShadow: shadowGreenLight }} >Verde</button>
+		<div className="tubo"></div>
+		<div className="container">
+		<button className="bombillo mt-2" onClick={redLight} style={{backgroundColor: "red", boxShadow: shadowRedLight }}></button>
+		<button className="bombillo" onClick={yellowLight} style={{backgroundColor: "yellow", boxShadow: shadowYellowLight }}></button>
+		<button className="bombillo mb-2"onClick={greeLight} style={{backgroundColor: "green", boxShadow: shadowGreenLight }} ></button>
+		</div>
 		</>
 	);
 };
