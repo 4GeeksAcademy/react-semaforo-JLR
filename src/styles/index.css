@@ -11,13 +11,35 @@
     background-color: black;
     width: 130px;
     border-radius: 5px;
+    margin-top: -20px;
 }
 .tubo{
     background-color: black;
     width: 34px;
     height: 80px;
     position: relative;
-    top: 40px;
+    top: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.botoncolor{
+    border: none;
+    width: 130px;
+    border-radius: 7px;
+    margin-top: 2px;
+}
+
+.botonrestartramdom{
+    border:none;
+    width: 130px;
+    border-radius: 7px;
+    margin-top: 2px;
+    background-color: rgb(148, 148, 148);
+    
+}
+.contenedorDeBotones{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
 }
