@@ -43,3 +43,17 @@ flex-direction: column;
 justify-content: flex-end;
 align-items: center;
 }
+.purpleBoton{
+    border:none;
+    width: 130px;
+    border-radius: 7px;
+    margin-top: 2px;
+    background-color: purple
+}
+.contenedorDeBotones2{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
